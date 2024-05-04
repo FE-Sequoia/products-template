@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["components/diy/form_mall_seller"],{"8a4a":function(e,l,t){},"9d1a":function(e,l,t){"use strict";var a=t("8a4a"),o=t.n(a);o.a},adbb:function(e,l,t){"use strict";var a;t.r(l);var o,n=function(){var e=this,l=e.$createElement,t=(e._self._c,e.$check_register_field("add","seller_id","/mall_seller/view")),a=e.$check_register_field("add","seller_name","/mall_seller/view");e.$mp.data=Object.assign({},{$root:{m0:t,m1:a}})},r=[],s=t("e6af"),c=s["a"],u=(t("9d1a"),t("f0c5")),i=Object(u["a"])(c,n,r,!1,null,null,null,!1,a,o);l["default"]=i.exports},e6af:function(e,l,t){"use strict";(function(e){l["a"]={model:{prop:"form",event:"change"},props:{form:{type:Object,default:function(){return{url_upload:"~/api/mall_seller/upload?"}}}},data:function(){return{}},methods:{change_img:function(l){var t=this;t.upload_img_flag=!1,e.chooseImage({count:1,sizeType:["original","compressed"],sourceType:["album"],success:function(a){var o=a.tempFilePaths,n=e.uploadFile({url:t.$fullUrl("/api/mall_seller/upload?"),filePath:o[0],name:"file",formData:{i_want_to_customize:"test"},header:{"x-auth-token":"null"},success:function(e){var a=JSON.parse(e.data).result.url;t.$delete(t.form,l),t.$set(t.form,l,a),t.handleBlur(a,l)}});n.onProgressUpdate((function(e){t.percent=e.progress,console.log("上传进度"+e.progress),console.log("已经上传的数据长度"+e.totalBytesSent),console.log("预期需要上传的数据总长度"+e.totalBytesExpectedToSend)}))},error:function(e){console.log(e)}})},handleBlur:function(e,l){this.$emit("change",{value:e,type:l})}},mounted:function(){}}}).call(this,t("543d")["default"])}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'components/diy/form_mall_seller-create-component',
+    {
+        'components/diy/form_mall_seller-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("adbb"))
+        })
+    },
+    [['components/diy/form_mall_seller-create-component']]
+]);

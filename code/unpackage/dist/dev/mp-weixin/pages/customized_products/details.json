@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "定制商品",
+  "usingComponents": {
+    "uni-icons": "/components/uni-icons/uni-icons",
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "uni-popup-share": "/components/uni-popup-share/uni-popup-share",
+    "list_comment": "/components/diy/list_comment",
+    "bar_title": "/components/diy/bar_title",
+    "form_editor": "/components/diy/form_editor"
+  }
+}

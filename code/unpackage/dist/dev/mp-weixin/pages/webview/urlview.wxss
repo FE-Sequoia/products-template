@@ -1,0 +1,1 @@
+#outerdiv{margin:0 auto;width:100%;overflow:hidden;position:relative}#inneriframe{position:absolute;top:-150px;left:0;width:100%}

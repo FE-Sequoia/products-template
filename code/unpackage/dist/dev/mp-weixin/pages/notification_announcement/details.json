@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "通知公告",
+  "usingComponents": {
+    "list_comment": "/components/diy/list_comment",
+    "bar_title": "/components/diy/bar_title",
+    "form_editor": "/components/diy/form_editor"
+  }
+}

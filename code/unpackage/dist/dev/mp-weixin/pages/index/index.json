@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "list_customized_products": "/components/diy/list_customized_products",
+    "list_notification_announcement": "/components/diy/list_notification_announcement",
+    "card": "/components/common/card",
+    "bar_title": "/components/diy/bar_title",
+    "list_ad": "/components/diy/list_ad",
+    "list_menu": "/components/diy/list_menu",
+    "list_goods": "/components/diy/list_goods",
+    "list_article": "/components/diy/list_article",
+    "list_link": "/components/diy/list_link",
+    "slide": "/components/common/slide",
+    "notice": "/components/common/notice"
+  }
+}

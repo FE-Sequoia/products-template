@@ -1,0 +1,1 @@
+<view class="page_user data-v-ca37a0d6" id="user_address"><view class="data-v-ca37a0d6"><block wx:if="{{$root.m0}}"><list_address vue-id="0b446106-1" list="{{list}}" class="data-v-ca37a0d6" bind:__l="__l"></list_address></block></view></view>

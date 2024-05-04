@@ -1,0 +1,1 @@
+<view><view style="{{(style_outer)}}" id="outerdiv" class="_div"><web-view style="{{(style_inner)}}" id="inneriframe" src="http://www.nmc.cn/publish/forecast.html	"></web-view></view></view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "在线留言详情",
+  "usingComponents": {
+    "bar_title": "/components/diy/bar_title"
+  }
+}

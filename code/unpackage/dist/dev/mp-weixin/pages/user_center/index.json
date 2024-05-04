@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-datetime-picker": "/components/uni-datetime-picker/uni-datetime-picker",
+    "pie-chart": "/components/charts/pie_chart",
+    "new-bar-chart": "/components/charts/new_bar_chart",
+    "new-line-chart": "/components/charts/new_line_chart",
+    "subject-exam-charts": "/components/charts/subject_exam_charts"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/webview/webview",
+    "pages/authorization/authorization",
+    "pages/authorization/authorization-weixin",
+    "pages/authorization/authorization-weibo",
+    "pages/comment/edit",
+    "pages/comment/view",
+    "pages/Intelligent-customer-service/Intelligent-customer-service",
+    "pages/media/music",
+    "pages/media/image",
+    "pages/media/video",
+    "pages/account/forgot",
+    "pages/account/login",
+    "pages/account/register",
+    "pages/article/list",
+    "pages/article/index",
+    "pages/article/details",
+    "pages/forum/index",
+    "pages/forum/list",
+    "pages/forum/details",
+    "pages/forum/view",
+    "pages/forum/table",
+    "pages/forum/edit",
+    "pages/forum/add",
+    "pages/comment/table",
+    "pages/exam/list",
+    "pages/exam/details",
+    "pages/goods/list",
+    "pages/goods/details",
+    "pages/cart/index",
+    "pages/cart/list",
+    "pages/order/index",
+    "pages/order/list",
+    "pages/order/details",
+    "pages/pay/index",
+    "pages/logistics_delivery/table",
+    "pages/logistics_delivery/view",
+    "pages/user/address",
+    "pages/user/address_edit",
+    "pages/goods/coupon",
+    "pages/user/coupon",
+    "pages/notice/list",
+    "pages/notice/details",
+    "pages/message/list",
+    "pages/message/edit",
+    "pages/message/table",
+    "pages/message/view",
+    "pages/webview/urlview",
+    "pages/mall_center/list",
+    "pages/mall_center/details",
+    "pages/customized_products/list",
+    "pages/customized_products/details",
+    "pages/i_want_to_customize/edit",
+    "pages/notification_announcement/list",
+    "pages/notification_announcement/details",
+    "pages/registered_users/table",
+    "pages/registered_users/view",
+    "pages/mall_seller/table",
+    "pages/mall_seller/view",
+    "pages/customized_products/table",
+    "pages/customized_products/view",
+    "pages/i_want_to_customize/table",
+    "pages/i_want_to_customize/view",
+    "pages/notification_announcement/table",
+    "pages/notification_announcement/view",
+    "pages/classification_information/table",
+    "pages/classification_information/view",
+    "pages/exam_subject/answer_wrong_table",
+    "pages/exam_subject/answer_wrong_detail",
+    "pages/exam_subject/list",
+    "pages/exam_subject/details",
+    "pages/user/collect",
+    "pages/novel_chapters/table",
+    "pages/novel_chapters/view",
+    "pages/novel_chapters/read",
+    "pages/user/index",
+    "pages/user/password",
+    "pages/user/info",
+    "pages/user_center/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "长盛",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#3388FF",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/img/home_a.png",
+        "selectedIconPath": "static/img/home_b.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "static/img/cart_a.png",
+        "selectedIconPath": "static/img/cart_b.png"
+      },
+      {
+        "pagePath": "pages/forum/index",
+        "text": "交流论坛",
+        "iconPath": "static/img/forum_a.png",
+        "selectedIconPath": "static/img/forum_b.png"
+      },
+      {
+        "pagePath": "pages/article/index",
+        "text": "新闻资讯",
+        "iconPath": "static/img/article_a.png",
+        "selectedIconPath": "static/img/article_b.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "static/img/my_a.png",
+        "selectedIconPath": "static/img/my_b.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation",
+    "chooseLocation"
+  ],
+  "usingComponents": {}
+}

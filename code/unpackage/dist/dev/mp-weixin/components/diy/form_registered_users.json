@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-data-select": "/components/uni-data-select/uni-data-select",
+    "uni-datetime-picker": "/components/uni-datetime-picker/uni-datetime-picker",
+    "ld-select": "/components/ld-select/ld-select"
+  }
+}
