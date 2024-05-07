@@ -2,7 +2,7 @@
   <div style="height: 100%">
     <template v-if="vm.tabs.length > 0">
       <el-tabs v-model="activeName" @tab-click="changeTab">
-        <el-tab-pane v-for="item in vm.tabs" :label="item" :name="item"></el-tab-pane>
+        <el-tab-pane v-for="(item, index) in vm.tabs" :key="index" :label="item" :name="item"></el-tab-pane>
       </el-tabs>
       <div style="height: 300px;">
         <div class="line_chart" :id="id">折线图</div>
