@@ -5,11 +5,11 @@ module.exports = {
 		host: "0.0.0.0"
 	},
 	mysql: {
-		port: 3308,
+		port: 3306,
 		host: "127.0.0.1",
 		user: "root",
 		password: "root",
-		database: "basic",
+		database: "products_basic_db",
 		log: false,
 		timezone:"08:00"
 	}
