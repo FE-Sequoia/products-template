@@ -24,6 +24,7 @@
         </el-col>
         <el-col
           v-for="(o, i) in question_list"
+          :key="i"
           :xs="24"
           :sm="24"
           :lg="24"
@@ -99,7 +100,8 @@
           <el-form-item v-if="o.type === '单选题'" label="">
             <el-radio
               :disabled="if_answered"
-              v-for="q in get_question_list(o.question_item)"
+              v-for="(q, i) in get_question_list(o.question_item)"
+              :key="i"
               v-model="answers[i]"
               :label="q"
               >{{ q }}</el-radio
@@ -111,8 +113,9 @@
           <el-form-item v-else-if="o.type === '多选题'" label="">
             <el-checkbox-group :disabled="if_answered" v-model="answers[i]">
               <el-checkbox
-                v-for="q in get_question_list(o.question_item)"
+                v-for="(q, i) in get_question_list(o.question_item)"
                 :label="q"
+                :key="i"
               ></el-checkbox>
             </el-checkbox-group>
             <div class="score_show" v-if="if_answered && reference_answers[i]">
@@ -122,9 +125,10 @@
           <el-form-item v-else-if="o.type === '判断题'" label="">
             <el-radio
               :disabled="if_answered"
-              v-for="q in get_question_list(o.question_item)"
+              v-for="(q, i) in get_question_list(o.question_item)"
               v-model="answers[i]"
               :label="q"
+              :key="i"
               >{{ q }}</el-radio
             >
             <div class="score_show" v-if="if_answered && reference_answers[i]">

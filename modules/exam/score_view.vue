@@ -5,7 +5,7 @@
 				<el-col :xs="24" :sm="24" :lg="24" class="el_form_item_warp">
 					<div class="title_margin" style="margin-bottom: 20px"  v-if="form.score_state===1">已评分，得分：<span style="color: red">{{form.score}}</span></div>
 				</el-col>
-				<el-col v-for="(o,i) in question_list" :xs="24" :sm="24" :lg="24" class="el_form_item_warp">
+				<el-col v-for="(o,i) in question_list" :key="i" :xs="24" :sm="24" :lg="24" class="el_form_item_warp">
 					<div class="title_margin" v-if="o.type === '单选题'">
 						{{o.question_order+'.单选题：'+o.title+"   ("+o.score+"分)"}}
 						<span class="score_show">--------{{answer_scores[i]}}分</span>
@@ -37,21 +37,21 @@
 						<span class="score_show" v-else>--------{{answer_scores[i]}}分</span>
 					</div>
 					<el-form-item v-if="o.type === '单选题'" label="">
-						<el-radio :disabled="true" v-for="q in get_question_list(o.question_item)" v-model="answers[i]" :label="q">{{q}}</el-radio>
+						<el-radio :disabled="true" v-for="(q, i) in get_question_list(o.question_item)" :key="i" v-model="answers[i]" :label="q">{{q}}</el-radio>
 						<div v-if="if_scored && reference_answers[i]">
 							参考答案：{{reference_answers[i]}}
 						</div>
 					</el-form-item>
 					<el-form-item v-else-if="o.type === '多选题'" label="">
 						<el-checkbox-group :disabled="true" v-model="answers[i]">
-							<el-checkbox v-for="q in get_question_list(o.question_item)" :label="q"></el-checkbox>
+							<el-checkbox v-for="(q, i) in get_question_list(o.question_item)" :key="i" :label="q"></el-checkbox>
 						</el-checkbox-group>
 						<div v-if="if_scored && reference_answers[i]">
 							参考答案：{{reference_answers[i]}}
 						</div>
 					</el-form-item>
 					<el-form-item v-else-if="o.type === '判断题'" label="">
-						<el-radio :disabled="true" v-for="q in get_question_list(o.question_item)" v-model="answers[i]" :label="q">{{q}}</el-radio>
+						<el-radio :disabled="true" v-for="(q, i) in get_question_list(o.question_item)" :key="i" v-model="answers[i]" :label="q">{{q}}</el-radio>
 						<div v-if="if_scored && reference_answers[i]">
 							参考答案：{{reference_answers[i]}}
 						</div>
