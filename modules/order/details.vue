@@ -235,20 +235,14 @@ export default {
      * 支付
      */
     goto_pay() {
-      this.$router.push(
-        "/pay/detail?" +
-        "order_number=" +
-      this.order_number +
-        "&&" +
-        "sum_price=" +
-      this.sum_price +
-        "&&" +
-        "remark=" +
-      this.remark +
-        "&&" +
-        "coupon_id=" +
-      this.use_coupon_id.split("-")[1]
-      );
+      this.$router.push({
+        path: '/pay/details',
+        query: {
+        order_number: this.order_number,
+        sum_price: this.sum_price,
+        remark: this.remark,
+        coupon_id: this.use_coupon_id.split("-")[1]
+      }})
     },
     /**
      *  当前用户的优惠券
